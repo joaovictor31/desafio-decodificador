@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    background-color: #F3F5FC;
+    font-family: "Inter", sans-serif;
+}
+
+.logomarca{
+    padding: 40px;
+    width: 120px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right{
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+
+}
+
+.input-text{
+    width: 680px;
+    height: 288px;
+    background-color: transparent; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar */
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: #0A3871;
+    line-height: 48px;
+}
+
+.input-text::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+
+}
+
+.alerta{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #495057
+    ;
+}
+
+.criptografar{
+    background-color: #0A3871;
+    color: white;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+.descriptografar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    padding: 24px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+.imagem{
+    width: 336px;
+    height: 304px;
+    padding-top: 283px;
+    left: 1032px;
+}
+
+.resposta{
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #343A40;
+}
+
+.subtitulo{
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057; 
+}
