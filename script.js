@@ -1,10 +1,15 @@
 let texto = document.querySelector('.input-text')
-let botao = document.querySelector('.criptografar')
+let botao__criptografar = document.querySelector('.criptografar')
+let botao__descriptografar = document.querySelector('.descriptografar')
 
-function mostra(){
-console.log(texto.value)
+function criptografar(){
+    texto = texto.value
+    let lista = texto.split("");
+    lista.forEach(function)
+    texto_novo = texto.replace('e','enter')
+    console.log(lista)
 }
 
-botao.addEventListener('click',mostra)
+botao__criptografar.addEventListener('click',criptografar)
 
 console.log('nada')
