@@ -2,6 +2,9 @@ let texto__entrada = document.querySelector('.input-text');
 let botao__criptografar = document.querySelector('.criptografar');
 let botao__descriptografar = document.querySelector('.descriptografar');
 let resultado__saida = document.querySelector('.resposta');
+let imagem = document.querySelector('.imagem');
+let subtitulo = document.querySelector('.subtitulo');
+let copiar = document.querySelector('.copiar'); 
 
 // Função para criptografar o texto
 function criptografar() {
@@ -13,6 +16,11 @@ function criptografar() {
         .replace(/o/g, 'ober')
         .replace(/u/g, 'ufat');
     resultado__saida.textContent = textoCriptografado;
+    imagem.style.display = 'none';
+    subtitulo.style.display = 'none';
+    copiar.style.display = 'block';
+    
+
 }
 
 // Função para descriptografar o texto
@@ -27,5 +35,18 @@ function descriptografar() {
     resultado__saida.textContent = textoDescriptografado;
 }
 
+//Função para copiar o texto
+    function copiarTexto() {
+        let textoParaCopiar = resultado__saida.textContent; // Obtém o texto descriptografado
+        navigator.clipboard.writeText(textoParaCopiar)
+            .then(() => {
+                alert('Texto copiado para a área de transferência!');
+            })
+            .catch(err => {
+                console.error('Erro ao copiar o texto: ', err);
+            });
+}
+
 botao__criptografar.addEventListener('click', criptografar);
 botao__descriptografar.addEventListener('click', descriptografar);
+copiar.addEventListener('click',copiarTexto);
